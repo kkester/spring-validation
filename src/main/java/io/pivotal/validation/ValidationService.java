@@ -17,8 +17,8 @@ public class ValidationService {
 
     private final Validator accountValidator;
 
-    public void validateAccount(@Valid Account account) {
-
+    public void saveAccount(@Valid Account account) {
+        // save account logic would go here
     }
 
     public void validateAccountProgrammatically(Account account) {

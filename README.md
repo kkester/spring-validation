@@ -8,6 +8,7 @@ This PoC demonstrates the following architecture, design, and coding strategies:
 2. Standard Bean property validation
 3. Custom Bean validation
 4. Spring Boot Unit Test with Exception assertions
+5. Leveraging Lombok
 
 ### Reference Documentation
 For further reference, please consider the following sections:
