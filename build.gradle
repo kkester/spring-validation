@@ -5,6 +5,11 @@ plugins {
 	id 'java'
 }
 
+reckon {
+	stages('milestone', 'rc', 'final')
+	stageCalc = calcStageFromProp()
+}
+
 group = 'io.pivotal'
 sourceCompatibility = '11'
 
@@ -39,11 +44,6 @@ dependencies {
 //	scopeCalc = { inventory -> Optional.of(Scope.MAJOR) }
 //	stageCalc = { inventory, targetNormal -> Optional.of('beta') }
 //}
-
-reckon {
-	stages('milestone', 'rc', 'final')
-	stageCalc = calcStageFromProp()
-}
 
 tasks.named('test') {
 	useJUnitPlatform()
