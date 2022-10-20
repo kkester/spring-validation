@@ -9,6 +9,13 @@ This PoC demonstrates the following architecture, design, and coding strategies:
 3. Custom Bean validation
 4. Spring Boot Unit Test with Exception assertions
 5. Leveraging Lombok
+6. Using `reckon` for version management
+
+### Building the App
+Below is an example command that builds the application and creates the next semantic version
+```
+./gradlew build -Preckon.scope=major -Preckon.stage=final reckonTagCreate
+```
 
 ### Reference Documentation
 For further reference, please consider the following sections:
