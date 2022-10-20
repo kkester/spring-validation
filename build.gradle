@@ -1,13 +1,13 @@
 plugins {
 	id 'org.springframework.boot' version '2.7.4'
 	id 'io.spring.dependency-management' version '1.0.14.RELEASE'
-	id 'org.ajoberstar.reckon' version '0.16.1'
 	id 'java'
+	id 'org.ajoberstar.reckon' version '0.12.0'
 }
 
 reckon {
-	stages('milestone', 'rc', 'final')
-	stageCalc = calcStageFromProp()
+	scopeFromProp()
+	snapshotFromProp()
 }
 
 group = 'io.pivotal'
