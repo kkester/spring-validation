@@ -17,6 +17,8 @@ Below is an example command that builds the application and creates the next sem
 ./gradlew build -Preckon.scope=major -Preckon.stage=final reckonTagCreate
 ```
 
+Upon completion, run `git tag -l` and the tag created from the build should be displayed.
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
