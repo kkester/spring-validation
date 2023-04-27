@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;
 import java.time.LocalDate;
 
 @Data
@@ -22,6 +23,7 @@ public class Account {
     private String lastName;
     @Past(message = "DOB must be in the past")
     private LocalDate dob;
+    @Pattern(regexp = "^(.+)@(\\S+)$")
     private String email;
     private String username;
     private LocalDate startDate;
